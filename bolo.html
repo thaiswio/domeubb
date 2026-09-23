@@ -422,33 +422,6 @@ async function startMic() {
 
 <script>
 let player;
-
-function onYouTubeIframeAPIReady() {
-    player = new YT.Player('player', {
-        height: '0',
-        width: '0',
-        videoId: 'ZuGqUj5xrhM',
-        playerVars: {
-            autoplay: 1,
-            controls: 0,
-            loop: 1,
-            playlist: 'ZuGqUj5xrhM'
-        },
-        events: {
-            onReady: (event) => {
-                event.target.playVideo();
-            }
-        }
-    });
-}
-
-function tocar() {
-    player.playVideo();
-}
-
-function pausar() {
-    player.pauseVideo();
-}
 </script>
 </body>
 </html>
